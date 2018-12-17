@@ -10,7 +10,7 @@ module.exports = function(env) {
   const isDev = env.dev ? true : false;
   const isProd = env.prod ? true : false;
 
-  config.entry = "./js/index.js";
+  config.entry = "./src/index.js";
   config.output = {
     filename: isDev ? "[name].js" : "[name].[chunkhash].js",
     path: path.resolve(__dirname, "build")
