@@ -39,7 +39,7 @@ class SecondPageGood extends React.Component {
 
     render() {
         return <div style={secondPageGood}>
-        <div><p>Nie masz ochoty komuś wywalić gonga w nos?</p></div>
+            <div><p>Nie masz ochoty komuś wywalić gonga w nos?</p></div>
             <div>
                 <button onClick={this.handleButtonSecond}>Jasne</button>
                 <button onClick={this.handleButtonSecond}>Broń boże!</button>

@@ -13,30 +13,34 @@ class ThirdPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            inputRange: '2',
+            inputRange: '9',
         }
     }
+
+    handleRangeThird = () => {
+      this.props.ClickMethodThirdPage();
+    };
 
     handleValueChange = (e) => {
         this.setState({inputRange: e.target.value})
     };
 
-    render(){
+    render() {
         let label;
-        if (this.state.inputRange < 4){
+        if (this.state.inputRange < 4) {
             label = "nie chcę"
-        }
-        else if (this.state.inputRange >= 4 && this.state.inputRange <= 6 ) {
+        } else if (this.state.inputRange >= 4 && this.state.inputRange <= 6) {
             label = "wszystko mi jedno"
-        }
-        else if (this.state.inputRange > 6) {
+        } else if (this.state.inputRange > 6) {
             label = "w chuj"
         }
         return <div style={thirdPageDiv}>
             <div>
-                <p>Jak bardzo trafia chcesz umrzeć?</p>
-                <input type="range" min="0" max="10" name="range" value={this.state.inputRange} onChange={this.handleValueChange}/>
+                <p>Jak bardzo chcesz umrzeć?</p>
+                <input type="range" min="0" max="10" name="range" value={this.state.inputRange}
+                       onChange={this.handleValueChange}/>
                 <label>{label}</label>
+                <button onClick={this.handleRangeThird}>Zatwierdź</button>
             </div>
         </div>
     }
