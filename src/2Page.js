@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const secondPageGood = {
     backgroundColor: "blue",
     width: "100vw",
@@ -41,20 +42,25 @@ class SecondPageGood extends React.Component {
         <div><p>Nie masz ochoty komuś wywalić gonga w nos?</p></div>
             <div>
                 <button onClick={this.handleButtonSecond}>Jasne</button>
-                <button>Broń boże!</button>
+                <button onClick={this.handleButtonSecond}>Broń boże!</button>
             </div>
         </div>
     }
 }
 
 class SecondPageNeutral extends React.Component {
+
+    handleButtonSecond = () => {
+        this.props.ClickMethodSecondPage();
+    };
+
     render() {
         return <div style={secondPageNeutral}>
             <div><p>Chcesz w nos?</p></div>
             <div>
-                <button>Dawaj</button>
-                <button>Obojętne mi to</button>
-                <button>Nie</button>
+                <button onClick={this.handleButtonSecond}>Dawaj</button>
+                <button onClick={this.handleButtonSecond}>Obojętne mi to</button>
+                <button onClick={this.handleButtonSecond}>Nie</button>
             </div>
         </div>
     }
@@ -62,24 +68,21 @@ class SecondPageNeutral extends React.Component {
 
 class SecondPageBad extends React.Component {
 
+    handleButtonSecond = () => {
+        this.props.ClickMethodSecondPage();
+    };
+
     render() {
         return <div style={secondPageBad}>
             <div><p>Nie rozkwasiłbyś paru łbów?</p></div>
             <div>
-                <button>SLAYER KURWAAAAA</button>
-                <button>Nah</button>
+                <button onClick={this.handleButtonSecond}>SLAYER KURWAAAAA</button>
+                <button onClick={this.handleButtonSecond}>Nah</button>
             </div>
         </div>
-    }
-}
-
-class ThirdPage extends React.Component {
-    render(){
-        return <div>TRZECIA STRONA</div>
     }
 }
 
 export default SecondPageGood;
 export {SecondPageNeutral};
 export {SecondPageBad};
-export {ThirdPage};

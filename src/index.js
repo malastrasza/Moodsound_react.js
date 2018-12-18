@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import SecondPageGood from './2Page';
 import {SecondPageNeutral} from './2Page';
 import {SecondPageBad} from './2Page';
-import {ThirdPage} from "./2Page";
+import ThirdPage from "./3Page";
 
 const firstPageDivButtonStyle1 = {
     display: "flex",
@@ -79,9 +79,9 @@ class Page extends React.Component {
         } else if (this.state.page == "2good") {
             return <SecondPageGood ClickMethodSecondPage={this.handleButtonSecondPage}/>
         } else if (this.state.page == "2neutral") {
-            return <SecondPageNeutral/>
+            return <SecondPageNeutral ClickMethodSecondPage={this.handleButtonSecondPage}/>
         } else if (this.state.page == "2bad") {
-            return <SecondPageBad/> }
+            return <SecondPageBad ClickMethodSecondPage={this.handleButtonSecondPage}/> }
         else if (this.state.page == 3) {
             return <ThirdPage/>
         }
