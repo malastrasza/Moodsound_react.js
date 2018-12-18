@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SecondPageGood from './2Page.js';
+import {SecondPageNeutral} from './2Page.js';
+import {SecondPageBad} from './2Page.js';
 
 const firstPageDivButtonStyle1 = {
     display: "flex",
@@ -28,7 +31,7 @@ class Main extends React.Component {
 
 
     render() {
-        return <div id="firstPage" style={firstPageDivButtonStyle1}>
+        return <div style={firstPageDivButtonStyle1}>
             <div><p>Jak się czujesz?</p></div>
             <div style={firstPageDivButtonStyle2}>
                 <button onClick={this.handleButtonGoodProps}>Good</button>
@@ -36,24 +39,6 @@ class Main extends React.Component {
                 <button onClick={this.handleButtonBadProps}>Bad</button>
             </div>
         </div>
-    }
-}
-
-class SecondPageGood extends React.Component {
-    render() {
-        return <div>SECOND PAGE GOOD</div>
-    }
-}
-
-class SecondPageNeutral extends React.Component {
-    render() {
-        return <div>SECOND PAGE NEUTRAL</div>
-    }
-}
-
-class SecondPageBad extends React.Component {
-    render() {
-        return <div>SECOND PAGE BAD</div>
     }
 }
 
