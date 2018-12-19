@@ -58,17 +58,19 @@ class Page extends React.Component {
     handleButtonGood = () => {
         this.setState({
             page: "2good",
-            draw: [...this.state.draw, 1]
+            draw: [...this.state.draw, 10]
         });
     };
     handleButtonNeutral = () => {
         this.setState({
-            page: "2neutral"
+            page: "2neutral",
+            draw: [...this.state.draw, 11]
         })
     };
     handleButtonBad = () => {
         this.setState({
-            page: "2bad"
+            page: "2bad",
+            draw: [...this.state.draw, 12]
         })
     };
     handleButtonSecondPage = (e) => {
