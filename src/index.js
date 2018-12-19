@@ -6,7 +6,7 @@ import {SecondPageBad} from './2Page';
 import ThirdPage from "./3Page";
 import FourthPage from "./4Page";
 import FifthPage from "./5Page";
-import FinalPage from "./FinalPage"
+import FinalPage from "./FinalPage";
 
 const firstPageDivButtonStyle1 = {
     display: "flex",
@@ -51,14 +51,15 @@ class Page extends React.Component {
         super(props);
         this.state = {
             page: "1",
+            draw: []
         }
     }
 
     handleButtonGood = () => {
-        console.log("Good");
         this.setState({
-            page: "2good"
-        })
+            page: "2good",
+            draw: [...this.state.draw, 1]
+        });
     };
     handleButtonNeutral = () => {
         this.setState({
@@ -70,9 +71,10 @@ class Page extends React.Component {
             page: "2bad"
         })
     };
-    handleButtonSecondPage = () => {
+    handleButtonSecondPage = (e) => {
         this.setState({
             page: "3",
+            draw: [...this.state.draw, e]
         })
     };
     handleButtonThirdPage = () => {
@@ -108,9 +110,10 @@ class Page extends React.Component {
         } else if (this.state.page == 5) {
                 return <FifthPage ClickMethodFifthPage={this.handleButtonFifthPage}/>
         } else if (this.state.page == 6) {
-                    return <FinalPage/>
+                    return <FinalPage drawIndex={this.state.draw}/>
         }
     }
+
 }
 
 function App() {

@@ -30,11 +30,11 @@ const secondPageNeutral = {
     height: "100vh"
 };
 
-
 class SecondPageGood extends React.Component {
 
     handleButtonSecond = () => {
-        this.props.ClickMethodSecondPage();
+        this.props.ClickMethodSecondPage(2);
+
     };
 
     render() {

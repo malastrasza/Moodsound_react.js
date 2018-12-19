@@ -1,11 +1,11 @@
 {
   "name": "webpack-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "### How to install: 1. `git clone https://github.com/beniaminrychter/webpack-react-demo` 2. `cd webpack-react-demo` 3. `npm i`",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack-dev-server --open --mode development --env.dev",
-    "build": "./node_modules/.bin/webpack --env.prod"
+    "start": "webpack-dev-server --open --mode development --env.dev",
+    "build": "webpack --env.prod"
   },
   "keywords": [],
   "author": "",
@@ -44,5 +44,16 @@
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
-  }
+  },
+  "dependencies": {
+    "firebase": "^5.5.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malastrasza/moodsound.git"
+  },
+  "bugs": {
+    "url": "https://github.com/malastrasza/moodsound/issues"
+  },
+  "homepage": "https://github.com/malastrasza/moodsound#readme"
 }
