@@ -7,19 +7,24 @@ import ThirdPage from "./3Page";
 import FourthPage from "./4Page";
 import FifthPage from "./5Page";
 import FinalPage from "./FinalPage";
+import "./../scss/main.scss";
 
 const firstPageDivButtonStyle1 = {
-    backgroundColor: "#DAAE90",
+    // backgroundColor: "#DAAE90",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
     width: "100vw",
-    height: "100vh"
+    height: "100vh",
+    padding: "10px",
+    margin: "10px"
 };
 
 const firstPageDivButtonStyle2 = {
     display: "flex",
+    padding: "10px",
+    margin: "10px"
 };
 
 class Main extends React.Component {
@@ -34,17 +39,17 @@ class Main extends React.Component {
         this.props.ClickMethodBad();
     };
 
-
     render() {
+
         return <div style={firstPageDivButtonStyle1}>
-            <div><p>Jak się teraz czujesz?</p></div>
+            <div className='questions'><p>jak się teraz czujesz?</p></div>
             <div style={firstPageDivButtonStyle2}>
-                <button onClick={this.handleButtonGoodProps}>Wyśmienicie</button>
-                <button onClick={this.handleButtonGoodProps}>Po prostu ok</button>
-                <button onClick={this.handleButtonNeutralProps}>Neutralnie</button>
-                <button onClick={this.handleButtonNeutralProps}>Nie wiem</button>
-                <button onClick={this.handleButtonBadProps}>Źle</button>
-                <button onClick={this.handleButtonBadProps}>Skrajnie do dupy</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonGoodProps}>Wyśmienicie</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonGoodProps}>po prostu ok</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonNeutralProps}>neutralnie</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonNeutralProps}>nie wiem</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonBadProps}>źle</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonBadProps}>skrajnie do dupy</button>
             </div>
         </div>
     }

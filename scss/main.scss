@@ -4,9 +4,11 @@
   padding: 0;
 }
 
-body {
-  font-family: sans-serif;
-}
+//body {
+//  font-family: sans-serif;
+//  margin: 0;
+//  padding: 0;
+//}
 
 img {
   width: 200px;
@@ -18,10 +20,221 @@ img {
   justify-content: center;
 }
 
-.tesla {
-  background-image: url("../images/tesla.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 300px;
+.questions {
+  //font-family: 'Major Mono Display', monospace;
+  font: 700 2.5rem 'Major Mono Display', monospace;
+  margin-bottom: 40px;
+}
+
+.secondPageQuestion {
+  width: 60vw;
+  margin-bottom: 30px;
+}
+
+// BUTTONS
+
+@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+  box-shadow: inset 0 0 0 $width $color;
+  color: $color;
+  transition: color $duration $duration/3;
+  position: relative;
+
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0; height: 0;
+
+    #{$vertical}: 0;
+    #{$horizontal}: 0;
+  }
+
+  &::before {
+    $h-side: if($horizontal == 'left', 'right', 'left');
+
+    border-#{$vertical}-width: $width;
+    border-#{$h-side}-width: $width;
+  }
+
+  &::after {
+    $v-side: if($vertical == 'top', 'bottom', 'top');
+
+    border-#{$v-side}-width: $width;
+    border-#{$horizontal}-width: $width;
+  }
+
+  &:hover {
+    color: $hover;
+
+    &::before,
+    &::after {
+      border-color: $hover;
+      transition: border-color 0s, width $duration, height $duration;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before { transition-delay: 0s, 0s, $duration; }
+
+    &::after { transition-delay: 0s, $duration, 0s; }
+  }
+}
+
+//.draw-border {
+//  @include btn-border-drawing(#58afd1, #ffe593, 4px, bottom, right);
+//}
+
+.draw1 {
+  @include btn-border-drawing(#fff, #993633, 4px, bottom, right);
+  padding: 10px;
+  margin: 10px;
+}
+
+.draw2 {
+  @include btn-border-drawing(#fff, #2B2D82, 4px, bottom, right);
+  padding: 10px;
+  margin: 10px;
+}
+
+.draw3 {
+  @include btn-border-drawing(#fff, #000, 4px, bottom, right);
+  padding: 10px;
+  margin: 10px;
+}
+
+.draw4 {
+  @include btn-border-drawing(#fff, #F5A9A9, 4px, bottom, right);
+  padding: 10px;
+  margin: 10px;
+}
+
+.draw2 {
+  @include btn-border-drawing(#fff, #2B2D82, 4px, bottom, right);
+  padding: 10px;
+  margin: 10px;
+}
+
+.draw2 {
+  @include btn-border-drawing(#fff, #2B2D82, 4px, bottom, right);
+  padding: 10px;
+  margin: 10px;
+}
+
+
+//=== Button styling, semi-ignore
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Major Mono Display', monospace;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+
+  &:focus { outline: 2px dotted #55d7dc; }
+}
+
+////=== Pen styling, ignore
+//body {
+//  background: #1f1a25;
+//  display: flex;
+//  align-items: center;
+//  justify-content: center;
+//  min-height: 100vh;
+//}
+
+// BACKGROUND
+
+body {
+  width: 100vw;
+  height: 90vh;
+  color: #fff;
+  //background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background: linear-gradient(-45deg, #CB7262, #CDAF6A, #AC6239, #E4CBAF);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 25s ease infinite;
+  -moz-animation: Gradient 25s ease infinite;
+  animation: Gradient 25s ease infinite;
+}
+
+.secondPageBackground {
+  background: linear-gradient(-45deg, #AF9FDF, #C3C2EB, #88B1D7, #6E7FCF);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 25s ease infinite;
+  -moz-animation: Gradient 25s ease infinite;
+  animation: Gradient 25s ease infinite;
+}
+
+.secondPageBackground2 {
+  background: linear-gradient(-45deg, #848484, #6E6E6E, #D8D8D8, #BDBDBD);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 25s ease infinite;
+  -moz-animation: Gradient 25s ease infinite;
+  animation: Gradient 25s ease infinite;
+}
+
+.secondPageBackground3 {
+  background: linear-gradient(-45deg, #AC3D39, #541D1C, #822B35, #EC0C0C);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 25s ease infinite;
+  -moz-animation: Gradient 25s ease infinite;
+  animation: Gradient 25s ease infinite;
+}
+
+.secondPageBackground4 {
+  background: linear-gradient(-45deg, #151515, #393B0B, #610B21, #424242);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 25s ease infinite;
+  -moz-animation: Gradient 25s ease infinite;
+  animation: Gradient 25s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+h1,
+h6 {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  left: 0;
 }

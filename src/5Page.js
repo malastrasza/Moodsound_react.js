@@ -1,4 +1,5 @@
 import React from "react";
+import "./../scss/main.scss";
 
 const finalDiv = {
     backgroundColor: "#DAAE90",

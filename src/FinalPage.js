@@ -3,7 +3,7 @@ import firebase, {db} from "./firebase";
 import YouTube from 'react-youtube';
 
 const finalDiv = {
-    backgroundColor: "#DAAE90",
+    // background: "radial-gradient(red, yellow, green)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -51,13 +51,41 @@ class FinalPage extends React.Component {
                         title: doc.data().title,
                         url: doc.data().url
                     }
-                )
+                );
+
+                // var url = new URL('https://apicloud-colortag.p.rapidapi.com/tag-url.json');
+                //
+                // var params = {palette: 'simple',
+                //     sort: 'relevance',
+                //     url: doc.data().artwork
+                // };
+
+                // url.search = new URLSearchParams(params)
+                //
+                // fetch(url, {
+                //         headers: {
+                //             'X-RapidAPI-Key': '831a701d2fmshf5c1b08c520d4c7p139ad3jsnd1905d0aed9c',
+                //         }
+                //     }
+                // ).then(resp => {
+                //     console.log(resp);
+                //     return resp.json()
+                // }).then(
+                //     data => {
+                //         console.log(data)
+                //     }
+                // )
+                //     .catch(err => {
+                //         console.log(err)
+                //     })
             } else {
                 console.log("No such document!");
             }
         }).catch(function (error) {
             console.log("Error getting document:", error);
         });
+
+
 
     }
 
