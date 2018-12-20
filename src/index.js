@@ -41,8 +41,8 @@ class Main extends React.Component {
             <div style={firstPageDivButtonStyle2}>
                 <button onClick={this.handleButtonGoodProps}>Wyśmienicie</button>
                 <button onClick={this.handleButtonGoodProps}>Po prostu ok</button>
-                <button onClick={this.handleButtonNeutralProps}>Nie wiem</button>
                 <button onClick={this.handleButtonNeutralProps}>Neutralnie</button>
+                <button onClick={this.handleButtonNeutralProps}>Nie wiem</button>
                 <button onClick={this.handleButtonBadProps}>Źle</button>
                 <button onClick={this.handleButtonBadProps}>Skrajnie do dupy</button>
             </div>

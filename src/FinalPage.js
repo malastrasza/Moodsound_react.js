@@ -88,6 +88,8 @@ componentWillMount() {
             console.log("Error getting document:", error);
         });
 
+
+
     }
 
     render() {
@@ -97,8 +99,9 @@ componentWillMount() {
             <div><h1>{this.state.title}</h1></div>
             <div><h3>{this.state.artist}</h3></div>
             <div><h3>{this.state.album}</h3></div>
-            <div><a href={this.state.url}>Play song</a></div>
-
+            <iframe id="ytplayer" type="text/html" width="640" height="360"
+                    src="https://www.youtube.com/embed/iw-b_VdpCEU?autoplay=1&start=7"
+                    frameBorder="0"/>
         </div>
     }
 }

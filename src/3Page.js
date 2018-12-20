@@ -27,10 +27,6 @@ class ThirdPage extends React.Component {
             this.props.ClickMethodThirdPage(32);
         } else if (this.state.inputRange == 4) {
             this.props.ClickMethodThirdPage(33);
-        } else if (this.state.inputRange == 5) {
-            this.props.ClickMethodThirdPage(34);
-        } else if (this.state.inputRange == 6) {
-            this.props.ClickMethodThirdPage(35);
         }
     };
 
@@ -41,15 +37,13 @@ class ThirdPage extends React.Component {
     render() {
         let label;
         if (this.state.inputRange == 1) {
-            label = "nie chcę"
+            label = "Nie chcę"
         } else if (this.state.inputRange == 2) {
-            label = "nie no, coś bym tam jeszcze pożył"
+            label = "Nie no, coś bym tam jeszcze pożył"
         } else if (this.state.inputRange == 3) {
-            label = "wszystko mi jedno"
+            label = "Wszystko mi jedno"
         } else if (this.state.inputRange == 4) {
-            label = "skończę tylko kurs i znajdę pracę i w sumie mogę umierać"
-        } else if (this.state.inputRange == 5) {
-            label = "w chuj"
+            label = "W chuj, skończę tylko kurs i znajdę pracę i w sumie mogę umierać"
         }
         return <div style={thirdPageDiv}>
             <div>
