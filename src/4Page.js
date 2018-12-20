@@ -1,6 +1,7 @@
 import React from "react";
 
 const fourthDiv = {
+    backgroundColor: "#DAAE90",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

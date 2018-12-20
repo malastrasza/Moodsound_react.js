@@ -9,6 +9,7 @@ import FifthPage from "./5Page";
 import FinalPage from "./FinalPage";
 
 const firstPageDivButtonStyle1 = {
+    backgroundColor: "#DAAE90",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -36,11 +37,14 @@ class Main extends React.Component {
 
     render() {
         return <div style={firstPageDivButtonStyle1}>
-            <div><p>Jak się czujesz?</p></div>
+            <div><p>Jak się teraz czujesz?</p></div>
             <div style={firstPageDivButtonStyle2}>
-                <button onClick={this.handleButtonGoodProps}>Good</button>
-                <button onClick={this.handleButtonNeutralProps}>Neutral</button>
-                <button onClick={this.handleButtonBadProps}>Bad</button>
+                <button onClick={this.handleButtonGoodProps}>Wyśmienicie</button>
+                <button onClick={this.handleButtonGoodProps}>Po prostu ok</button>
+                <button onClick={this.handleButtonNeutralProps}>Nie wiem</button>
+                <button onClick={this.handleButtonNeutralProps}>Neutralnie</button>
+                <button onClick={this.handleButtonBadProps}>Źle</button>
+                <button onClick={this.handleButtonBadProps}>Skrajnie do dupy</button>
             </div>
         </div>
     }
@@ -79,19 +83,21 @@ class Page extends React.Component {
             draw: [...this.state.draw, e]
         })
     };
-    handleButtonThirdPage = () => {
+    handleButtonThirdPage = (e) => {
         this.setState({
-            page: "4"
+            page: "4",
+            draw: [...this.state.draw, e]
         })
     };
     handleButtonFourthPage = () => {
         this.setState({
-            page: "5"
+            page: "5",
         })
     };
-    handleButtonFifthPage = () => {
+    handleButtonFifthPage = (e) => {
         this.setState({
-            page: "6"
+            page: "6",
+            draw: [...this.state.draw, e]
         })
     };
 
@@ -110,9 +116,9 @@ class Page extends React.Component {
         } else if (this.state.page == 4) {
             return <FourthPage ClickMethodFourthPage={this.handleButtonFourthPage}/>
         } else if (this.state.page == 5) {
-                return <FifthPage ClickMethodFifthPage={this.handleButtonFifthPage}/>
+            return <FifthPage ClickMethodFifthPage={this.handleButtonFifthPage}/>
         } else if (this.state.page == 6) {
-                    return <FinalPage drawIndex={this.state.draw}/>
+            return <FinalPage drawIndex={this.state.draw}/>
         }
     }
 

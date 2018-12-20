@@ -2,6 +2,7 @@ import React from "react";
 import firebase, {db} from "./firebase";
 
 const finalDiv = {
+    backgroundColor: "#DAAE90",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -26,8 +27,9 @@ class FinalPage extends React.Component {
 componentWillMount() {
 
     let answer = this.props.drawIndex;
+    console.log(answer);
 
-    if (answer[0] == 10 && answer[1] == 2) {
+    if (answer[0] == 10 && answer[1] == 200) {
         this.setState({
             response: "redclouds"
         })
