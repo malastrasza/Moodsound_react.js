@@ -18,9 +18,6 @@ class FifthPage extends React.Component {
     handleButtonFifth2 = () => {
         this.props.ClickMethodFifthPage(41);
     };
-    handleButtonFifth3 = () => {
-        this.props.ClickMethodFifthPage(42);
-    };
 
     render(){
         return <div style={finalDiv}>
@@ -29,8 +26,8 @@ class FifthPage extends React.Component {
             </p></div>
             <div>
                 <button onClick={this.handleButtonFifth1}>Nie wyglądam nawet za okno.</button>
-                <button onClick={this.handleButtonFifth2}>Dzwonię po bagiety łiju łiju</button>
-                <button onClick={this.handleButtonFifth3}>Wyskakuję przez okno, anihiluję patusa, wypijam czteropak i daję w pysk studentowi za to, że jest c*pą</button>
+                <button onClick={this.handleButtonFifth1}>Dzwonię po bagiety łiju łiju</button>
+                <button onClick={this.handleButtonFifth2}>Wyskakuję przez okno, anihiluję patusa, wypijam czteropak i daję w pysk studentowi za to, że jest c*pą</button>
             </div>
         </div>
     }

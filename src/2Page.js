@@ -40,9 +40,6 @@ class SecondPageGood extends React.Component {
     handleButtonSecond2 = () => {
         this.props.ClickMethodSecondPage(201);
     };
-    handleButtonSecond3 = () => {
-        this.props.ClickMethodSecondPage(202);
-    };
 
     render() {
         return <div style={secondPageGood}>
@@ -50,7 +47,7 @@ class SecondPageGood extends React.Component {
             <div>
                 <button onClick={this.handleButtonSecond1}>Jasne!</button>
                 <button onClick={this.handleButtonSecond2}>Broń mnie Panie Boże przed takimi myślami!</button>
-                <button onClick={this.handleButtonSecond3}>Eeee... nope.</button>
+                <button onClick={this.handleButtonSecond2}>Eeee... nope.</button>
 
             </div>
         </div>
@@ -59,23 +56,21 @@ class SecondPageGood extends React.Component {
 
 class SecondPageNeutral extends React.Component {
 
-    handleButtonSecond4 = () => {
-        this.props.ClickMethodSecondPage(210);
+    handleButtonSecond1 = () => {
+        this.props.ClickMethodSecondPage(200);
     };
-    handleButtonSecond5 = () => {
-        this.props.ClickMethodSecondPage(211);
+    handleButtonSecond2 = () => {
+        this.props.ClickMethodSecondPage(201);
     };
-    handleButtonSecond6 = () => {
-        this.props.ClickMethodSecondPage(212);
-    };
+
 
     render() {
         return <div style={secondPageNeutral}>
             <div><p>A chcesz lepe na ryj?</p></div>
             <div>
-                <button onClick={this.handleButtonSecond4}>Dawaj!</button>
-                <button onClick={this.handleButtonSecond5}>Nah, obojętne mi to...</button>
-                <button onClick={this.handleButtonSecond6}>Lol, nie</button>
+                <button onClick={this.handleButtonSecond1}>Dawaj!</button>
+                <button onClick={this.handleButtonSecond1}>Nah, obojętne mi to...</button>
+                <button onClick={this.handleButtonSecond2}>Lol, nie</button>
             </div>
         </div>
     }
@@ -83,19 +78,19 @@ class SecondPageNeutral extends React.Component {
 
 class SecondPageBad extends React.Component {
 
-    handleButtonSecond7 = () => {
-        this.props.ClickMethodSecondPage(220);
+    handleButtonSecond1 = () => {
+        this.props.ClickMethodSecondPage(200);
     };
-    handleButtonSecond8 = () => {
-        this.props.ClickMethodSecondPage(221);
+    handleButtonSecond2 = () => {
+        this.props.ClickMethodSecondPage(201);
     };
 
     render() {
         return <div style={secondPageBad}>
             <div><p>Nie rozkwasiłbyś paru parszywych ryjów?</p></div>
             <div>
-                <button onClick={this.handleButtonSecond7}>SLAYER KU*WAAAAA</button>
-                <button onClick={this.handleButtonSecond8}>Nah</button>
+                <button onClick={this.handleButtonSecond1}>SLAYER KU*WAAAAA</button>
+                <button onClick={this.handleButtonSecond2}>Nah</button>
             </div>
         </div>
     }
