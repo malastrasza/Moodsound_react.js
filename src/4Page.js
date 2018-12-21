@@ -18,16 +18,15 @@ class FourthPage extends React.Component {
     };
 
     render() {
-        return <div style={fourthDiv}>
-            <div><p>Czy kochasz metal?</p></div>
+        return <div className='secondPageBackground5' style={fourthDiv}>
+            <div><p className="questions">czy kochasz metal?</p></div>
             <div>
-            <button onClick={this.handleButtonFourth}>Tak</button>
-            <button onClick={this.handleButtonFourth}>Bardzo</button>
-            <button onClick={this.handleButtonFourth}>Tak, bardzo</button>
+            <button className="btn draw-border draw5" onClick={this.handleButtonFourth}>tak</button>
+            <button className="btn draw-border draw5" onClick={this.handleButtonFourth}>bardzo</button>
+            <button className="btn draw-border draw5" onClick={this.handleButtonFourth}>tak, bardzo</button>
             </div>
-                <input type="text"/>
         </div>
-    }
-}
+
+}}
 
 export default FourthPage;

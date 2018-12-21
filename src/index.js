@@ -123,7 +123,7 @@ class Page extends React.Component {
         } else if (this.state.page == 5) {
             return <FifthPage ClickMethodFifthPage={this.handleButtonFifthPage}/>
         } else if (this.state.page == 6) {
-            return <FinalPage drawIndex={this.state.draw}/>
+            return <FinalPage  drawIndex={this.state.draw}/>
         }
     }
 

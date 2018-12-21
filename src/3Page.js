@@ -40,25 +40,31 @@ class ThirdPage extends React.Component {
     render() {
         let label;
         if (this.state.inputRange == 1) {
-            label = "Nie chcę"
+            label = "nie chcę"
         } else if (this.state.inputRange == 2) {
-            label = "Nie no, coś bym tam jeszcze pożył"
+            label = "nie no, coś bym tam jeszcze pożył"
         } else if (this.state.inputRange == 3) {
-            label = "Wszystko mi jedno"
+            label = "wszystko mi jedno"
         } else if (this.state.inputRange == 4) {
-            label = "Skończę tylko kurs i znajdę pracę i w sumie mogę umierać"
+            label = "skończę tylko kurs i znajdę pracę i w sumie mogę umierać"
         } else if (this.state.inputRange == 5) {
-            label = "W chuj"
+            label = "w chuj"
         }
         return (
             <div className='secondPageBackground4' style={thirdPageDiv}>
             <div>
                 <div><p className="questions">jak bardzo chcesz umrzeć?</p></div>
-                <div><input type="range" min="1" max="4" name="range" value={this.state.inputRange}
+                <div><input type="range" min="1" max="5" name="range" value={this.state.inputRange}
                             onChange={this.handleValueChange}/></div>
-                <div><label>{label}</label></div>
-                <button className="btn draw-border draw4" onClick={this.handleRangeThird}>zatwierdź</button>
+
             </div>
+                <div className="margined4">
+                    <div><label className="questions">{label}</label></div>
+
+                </div>
+                <div>
+                    <button className="btn draw-border draw4" onClick={this.handleRangeThird}>zatwierdź</button>
+                </div>
         </div>
                 )
            }

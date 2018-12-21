@@ -10,10 +10,10 @@
 //  padding: 0;
 //}
 
-img {
-  width: 200px;
-  height: auto;
-}
+//img {
+//  width: 200px;
+//  height: auto;
+//}
 
 #app {
   display: flex;
@@ -29,6 +29,16 @@ img {
 .secondPageQuestion {
   width: 60vw;
   margin-bottom: 30px;
+}
+
+.margined4 {
+  margin: 40px 0;
+}
+
+.page5center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 // BUTTONS
@@ -109,20 +119,21 @@ img {
   @include btn-border-drawing(#fff, #F5A9A9, 4px, bottom, right);
   padding: 10px;
   margin: 10px;
+  display: flex;
+  justify-content: center;
 }
 
-.draw2 {
-  @include btn-border-drawing(#fff, #2B2D82, 4px, bottom, right);
+.draw5 {
+  @include btn-border-drawing(#fff, #BF4040, 4px, bottom, right);
   padding: 10px;
   margin: 10px;
 }
 
-.draw2 {
-  @include btn-border-drawing(#fff, #2B2D82, 4px, bottom, right);
+.draw6 {
+  @include btn-border-drawing(#fff, #C2D5FF, 4px, bottom, right);
   padding: 10px;
   margin: 10px;
 }
-
 
 //=== Button styling, semi-ignore
 .btn {
@@ -185,7 +196,23 @@ body {
 }
 
 .secondPageBackground4 {
-  background: linear-gradient(-45deg, #151515, #393B0B, #610B21, #424242);
+  background: linear-gradient(-45deg, #151515, #393B0B, #382C00, #424242);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 25s ease infinite;
+  -moz-animation: Gradient 25s ease infinite;
+  animation: Gradient 25s ease infinite;
+}
+
+.secondPageBackground5 {
+  background: linear-gradient(-45deg, #1F0C0A, #660300, #4D0400, #570013);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 25s ease infinite;
+  -moz-animation: Gradient 25s ease infinite;
+  animation: Gradient 25s ease infinite;
+}
+
+.secondPageBackground6 {
+  background: linear-gradient(-45deg, #B692D9, #D82CD2, #05C1FF, #FF5CA8);
   background-size: 400% 400%;
   -webkit-animation: Gradient 25s ease infinite;
   -moz-animation: Gradient 25s ease infinite;
@@ -237,4 +264,141 @@ h6 {
   top: 45%;
   right: 0;
   left: 0;
+}
+
+// RANGE INPUT
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 12.6px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 18.8px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(182, 180, 182, 0.68);
+  border-radius: 0px;
+  border: 0.1px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1.4px solid #000000;
+  height: 44px;
+  width: 38px;
+  border-radius: 9px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -12.7px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(195, 193, 195, 0.68);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 18.8px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: rgba(182, 180, 182, 0.68);
+  border-radius: 0px;
+  border: 0.1px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1.4px solid #000000;
+  height: 44px;
+  width: 38px;
+  border-radius: 9px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 18.8px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(169, 167, 169, 0.68);
+  border: 0.1px solid #010101;
+  border-radius: 0px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(182, 180, 182, 0.68);
+  border: 0.1px solid #010101;
+  border-radius: 0px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1.4px solid #000000;
+  height: 44px;
+  width: 38px;
+  border-radius: 9px;
+  background: #ffffff;
+  cursor: pointer;
+  height: 18.8px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(182, 180, 182, 0.68);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(195, 193, 195, 0.68);
+}
+// FINAL PAGE
+
+.divFinalPage {
+  font: 700 1.4rem 'Major Mono Display', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.large5Page {
+  position: relative;
+  //height: 30vh;
+}
+
+.randomSong {
+  font-size: 2.0rem;
+  margin-bottom: 30px;
+}
+
+.ytDiv {
+  margin-top: 40px;
+  position: relative;
+}
+
+.sizesFinal {
+  font-size: 1.7rem;
+}
+
+.mainDivFinal {
+  background: black;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+canvas  {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#000000;
+  z-index: 0;
 }

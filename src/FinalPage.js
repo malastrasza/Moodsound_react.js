@@ -1,15 +1,19 @@
 import React from "react";
 import firebase, {db} from "./firebase";
 import YouTube from 'react-youtube';
+import "./../scss/main.scss";
+import canvasMy from './canvas';
 
 const finalDiv = {
-    // background: "radial-gradient(red, yellow, green)",
+    background: "black",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
     width: "100vw",
-    height: "100vh"
+    height: "100vh",
+    marginTop: "0",
+    position: "relative"
 };
 
 class FinalPage extends React.Component {
@@ -30,18 +34,109 @@ class FinalPage extends React.Component {
         let answer = this.props.drawIndex;
         console.log(answer);
 
-        if (answer[0] == 10 && answer[1] == 200) {
+        if (answer[0] == 10 && answer[1] == 200 && answer[2] == 30 && answer[3] == 40) {
             this.setState({
-                response: "darkmatter"
+                response: "leech" //
             })
-        } else if (answer[0] == 10 && answer [1] == 201) {
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "ivy" //
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 31 && answer[3] == 40) {
+            this.setState({
+                response: "glow" //
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 31 && answer[3] == 41) {
+            this.setState({
+                response: "publicapology" //
+            })
+        } else if (answer[0] == 10 && answer [1] == 201 && answer[2] == 30 && answer[3] == 40) {
+            this.setState({
+                response: "cultofluna" //
+            })
+        } else if (answer[0] == 10 && answer [1] == 201 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "hollow" //
+            })
+        } else if (answer[0] == 10 && answer [1] == 201 && answer[2] == 31 && answer[3] == 40) {
+            this.setState({
+                response: "wildman" //
+            })
+        } else if (answer[0] == 10 && answer [1] == 201 && answer[2] == 31 && answer[3] == 41) {
+            this.setState({
+                response: "darkmatter" //
+            })
+        } else if (answer[0] == 11 && answer [1] == 200 && answer[2] == 30 && answer[3] == 40) {
+            this.setState({
+                response: "fourwalls" //
+            })
+        } else if (answer[0] == 11 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "intodespair" //
+            })
+        } else if (answer[0] == 11 && answer [1] == 200 && answer[2] == 31 && answer[3] == 40) {
+            this.setState({
+                response: "bitches" //
+            })
+        } else if (answer[0] == 11 && answer [1] == 200 && answer[2] == 31 && answer[3] == 41) {
+            this.setState({
+                response: "funeral" //
+            })
+        } else if (answer[0] == 11 && answer [1] == 201 && answer[2] == 30 && answer[3] == 40) {
+            this.setState({
+                response: "people" //
+            })
+        } else if (answer[0] == 11 && answer [1] == 201 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "bleed"
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "strainofhate"
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "strainofhate"
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "strainofhate"
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "strainofhate"
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "strainofhate"
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "strainofhate"
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "strainofhate"
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "strainofhate"
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+            this.setState({
+                response: "strainofhate"
+            })
+        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
             this.setState({
                 response: "strainofhate"
             })
         }
+
     }
 
     componentDidMount() {
+
+        canvasMy()
 
         db.collection('songs').doc(this.state.response).get().then((doc) => {
             if (doc.exists) {
@@ -92,23 +187,29 @@ class FinalPage extends React.Component {
     render() {
         {
             const opts = {
-                height: '390',
-                width: '640',
+                height: '250',
+                width: '400',
                 playerVars: {
                     autoplay: 1,
                 }
             };
-            return <div style={finalDiv}>
-                <div><h1>PIOSENKA DLA CIEBIE:</h1></div>
-                <div><img src={this.state.artwork} alt="album_artwork" height="250" width="250"/></div>
-                <div><h1>{this.state.title}</h1></div>
-                <div><h3>{this.state.artist}</h3></div>
+            return <div className="divFinalPage mainDivFinal" style={finalDiv}>
+                <canvas id="canvasFinal"></canvas>
+                <div className='large5Page'>
+                    <div className="divFinalPage"><p className="randomSong">wylosowany utwór:</p></div>
+                    <div className="divFinalPage"><img src={this.state.artwork} alt="album_artwork" height="200"
+                                                       width="200"/></div>
 
-                <YouTube
-                    videoId={this.state.url}
-                    opts={opts}
-                />
 
+                    <div className="divFinalPage"><p className="sizesFinal">tytuł: {this.state.title}</p></div>
+                    <div className="divFinalPage"><p className="sizesFinal">wykonawca: {this.state.artist}</p></div>
+                </div>
+                <div className="ytDiv">
+                    <YouTube
+                        videoId={this.state.url}
+                        opts={opts}
+                    />
+                </div>
             </div>
         }
     }
