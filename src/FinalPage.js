@@ -88,47 +88,47 @@ class FinalPage extends React.Component {
             })
         } else if (answer[0] == 11 && answer [1] == 201 && answer[2] == 30 && answer[3] == 41) {
             this.setState({
-                response: "bleed"
+                response: "bleed" //
             })
-        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+        } else if (answer[0] == 11 && answer [1] == 201 && answer[2] == 31 && answer[3] == 40) {
             this.setState({
-                response: "strainofhate"
+                response: "crown" //
             })
-        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+        } else if (answer[0] == 11 && answer [1] == 201 && answer[2] == 31 && answer[3] == 41) {
             this.setState({
-                response: "strainofhate"
+                response: "agneya" //
             })
-        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+        } else if (answer[0] == 12 && answer [1] == 200 && answer[2] == 30 && answer[3] == 40) {
             this.setState({
-                response: "strainofhate"
+                response: "icumblood" //
             })
-        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+        } else if (answer[0] == 12 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
             this.setState({
-                response: "strainofhate"
+                response: "makeithurt" //
             })
-        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+        } else if (answer[0] == 12 && answer [1] == 200 && answer[2] == 31 && answer[3] == 40) {
             this.setState({
-                response: "strainofhate"
+                response: "suicide" //
             })
-        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+        } else if (answer[0] == 12 && answer [1] == 200 && answer[2] == 31 && answer[3] == 41) {
             this.setState({
-                response: "strainofhate"
+                response: "pain" //
             })
-        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+        } else if (answer[0] == 12 && answer [1] == 201 && answer[2] == 30 && answer[3] == 40) {
             this.setState({
-                response: "strainofhate"
+                response: "lullaby" //
             })
-        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+        } else if (answer[0] == 12 && answer [1] == 201 && answer[2] == 30 && answer[3] == 41) {
             this.setState({
-                response: "strainofhate"
+                response: "pessimist" //
             })
-        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+        } else if (answer[0] == 12 && answer [1] == 201 && answer[2] == 31 && answer[3] == 40) {
             this.setState({
-                response: "strainofhate"
+                response: "torch" //
             })
-        } else if (answer[0] == 10 && answer [1] == 200 && answer[2] == 30 && answer[3] == 41) {
+        } else if (answer[0] == 12 && answer [1] == 201 && answer[2] == 31 && answer[3] == 41) {
             this.setState({
-                response: "strainofhate"
+                response: "strainofhate" //
             })
         }
 
@@ -181,7 +181,6 @@ class FinalPage extends React.Component {
         });
 
 
-
     }
 
     render() {
@@ -196,15 +195,16 @@ class FinalPage extends React.Component {
             return <div className="divFinalPage mainDivFinal" style={finalDiv}>
                 <canvas id="canvasFinal"></canvas>
                 <div className='large5Page'>
-                    <div className="divFinalPage"><p className="randomSong">wylosowany utwór:</p></div>
-                    <div className="divFinalPage"><img src={this.state.artwork} alt="album_artwork" height="200"
-                                                       width="200"/></div>
+                    <div className="divFinalPage"><p className="randomSong appear">wylosowany utwór:</p></div>
+                    <div className="divFinalPage appear"><img src={this.state.artwork} alt="album_artwork" height="200"
+                                                              width="200"/></div>
 
 
-                    <div className="divFinalPage"><p className="sizesFinal">tytuł: {this.state.title}</p></div>
-                    <div className="divFinalPage"><p className="sizesFinal">wykonawca: {this.state.artist}</p></div>
+                    <div className="divFinalPage"><p className="sizesFinal appear">tytuł: {this.state.title}</p></div>
+                    <div className="divFinalPage"><p className="sizesFinal appear">wykonawca: {this.state.artist}</p>
+                    </div>
                 </div>
-                <div className="ytDiv">
+                <div className="ytDiv appear">
                     <YouTube
                         videoId={this.state.url}
                         opts={opts}

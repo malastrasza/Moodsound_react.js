@@ -108,6 +108,7 @@ class Page extends React.Component {
 
     render() {
         if (this.state.page == 1) {
+
             return <Main ClickMethodGood={this.handleButtonGood} ClickMethodNeutral={this.handleButtonNeutral}
                          ClickMethodBad={this.handleButtonBad}/>
         } else if (this.state.page == "2good") {
@@ -123,7 +124,7 @@ class Page extends React.Component {
         } else if (this.state.page == 5) {
             return <FifthPage ClickMethodFifthPage={this.handleButtonFifthPage}/>
         } else if (this.state.page == 6) {
-            return <FinalPage  drawIndex={this.state.draw}/>
+            return <FinalPage drawIndex={this.state.draw}/>
         }
     }
 

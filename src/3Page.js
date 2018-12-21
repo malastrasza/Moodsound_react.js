@@ -52,12 +52,12 @@ class ThirdPage extends React.Component {
         }
         return (
             <div className='secondPageBackground4' style={thirdPageDiv}>
-            <div>
-                <div><p className="questions">jak bardzo chcesz umrzeć?</p></div>
-                <div><input type="range" min="1" max="5" name="range" value={this.state.inputRange}
-                            onChange={this.handleValueChange}/></div>
+                <div>
+                    <div><p className="questions">jak bardzo chcesz umrzeć?</p></div>
+                    <div><input type="range" min="1" max="5" name="range" value={this.state.inputRange}
+                                onChange={this.handleValueChange}/></div>
 
-            </div>
+                </div>
                 <div className="margined4">
                     <div><label className="questions">{label}</label></div>
 
@@ -65,9 +65,9 @@ class ThirdPage extends React.Component {
                 <div>
                     <button className="btn draw-border draw4" onClick={this.handleRangeThird}>zatwierdź</button>
                 </div>
-        </div>
-                )
-           }
+            </div>
+        )
+    }
 }
 
 

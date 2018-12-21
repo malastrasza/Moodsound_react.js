@@ -12,7 +12,7 @@ function canvasMy() {
         radDiff = maxRad - minRad,
         dots = [],
         pairs = [],
-    PI = Math.PI,
+        PI = Math.PI,
         centerPt = {x: 0, y: 0};
 
     resizeHandler();
