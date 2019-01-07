@@ -19,7 +19,7 @@ class FourthPage extends React.Component {
 
     render() {
         return <div className='secondPageBackground5' style={fourthDiv}>
-            <div><p className="questions">czy kochasz metal?</p></div>
+            <div><p className="questions pulse">czy kochasz metal?</p></div>
             <div>
                 <button className="btn draw-border draw5" onClick={this.handleButtonFourth}>tak</button>
                 <button className="btn draw-border draw5" onClick={this.handleButtonFourth}>bardzo</button>

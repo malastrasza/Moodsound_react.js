@@ -22,7 +22,7 @@ class FifthPage extends React.Component {
 
     render() {
         return <div className='secondPageBackground6' style={finalDiv}>
-            <div className='secondPageQuestion'><p className="questions">
+            <div className='secondPageQuestion'><p className="questions pulse5">
                 wyobraź sobie taką sytuację: zza okna słyszysz krzyk, wyglądasz na zewnątrz, a tam jakiś patus ucieka z
                 czteropakiem Harnasia grubego studenta, podczas gdy ów leży na ziemi w łzach i pocie, stękając o pomoc.
                 co robisz?

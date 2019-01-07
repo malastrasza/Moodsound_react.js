@@ -42,7 +42,7 @@ class Main extends React.Component {
     render() {
 
         return <div style={firstPageDivButtonStyle1}>
-            <div className='questions'><p>jak się teraz czujesz?</p></div>
+            <div className='questions'><p className="pulse">jak się teraz czujesz?</p></div>
             <div style={firstPageDivButtonStyle2}>
                 <button className="btn draw-border draw1" onClick={this.handleButtonGoodProps}>Wyśmienicie</button>
                 <button className="btn draw-border draw1" onClick={this.handleButtonGoodProps}>po prostu ok</button>

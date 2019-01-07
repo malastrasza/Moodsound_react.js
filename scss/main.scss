@@ -453,3 +453,23 @@ canvas {
   animation-duration: 7s;
 }
 
+.pulse {
+
+}
+
+@keyframes suwak {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.pulse {
+  animation: suwak 0.8s infinite alternate;
+}
+
+.pulse5 {
+  animation: suwak 3s infinite alternate;
+}

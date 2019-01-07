@@ -53,7 +53,7 @@ class ThirdPage extends React.Component {
         return (
             <div className='secondPageBackground4' style={thirdPageDiv}>
                 <div>
-                    <div><p className="questions">jak bardzo chcesz umrzeć?</p></div>
+                    <div><p className="questions pulse">jak bardzo chcesz umrzeć?</p></div>
                     <div><input type="range" min="1" max="5" name="range" value={this.state.inputRange}
                                 onChange={this.handleValueChange}/></div>
 

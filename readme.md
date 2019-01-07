@@ -1,26 +1,17 @@
-# Webpack React Demo App
+How to start?
+For project to start, type in your console "npm start" or "npm run start".
 
-### How to install:
-1. `git clone https://github.com/beniaminrychter/webpack-react-demo`
-2. `cd webpack-react-demo`
-3. `npm i`
+Few words about a project:
+Hereby I'd like to write a bit about this small project itself. It's my final project for CodersLab bootcamp. With my whole group from the bootcamp we decided that I'll be the last one presenting, since a theme of this code is quite funny and chilled and also pretty for an eye, hence it will be both good to be some kind of conclusion of whole group work and relaxing for an atmosphere of project presentations and course (bootcamp) final.
 
-Then `npm start` for development mode, and `npm run build` for production.
+What it actually is?
+Answer few questions in polish language (this one will probably stay in my native language, since I got more ideas for a future) and get a song that will fit your mood. Quite simple. Every choice will have an impact on a song chosen separately, no randomizing. What kind of second question will be shown depends on an answer to the first question.
 
-In development mode, localhost server will run on `localhost:8080` with autoreloading.
-
-
-### File structure:
-```
-src/
-    images/
-    scss/
-    js/
-    index.js
-    index.html
-webpack.config.js
-package.json
-```
-
-- `index.html` in `src` folder is a HTML template for our project.
-- `index.js` in `src` folder is main JavaScript file with ReactDOM.render() function. This is good place to import `scss` file.
+What more will I add:
+- previous button,
+- 5 steps before song, but with randomized questions,
+- color of final page background depending on album artwork color (since ColorAPI wasn't working the way I wanted, I will go for js solution),
+- more songs,
+- slight changes to background and buttons,
+- better structure of a code, since it went a bit spaghetti,
+- anything else I'll come up with :D
