@@ -42,14 +42,14 @@ class Main extends React.Component {
     render() {
 
         return <div style={firstPageDivButtonStyle1}>
-            <div className='questions'><p className="pulse">jak się teraz czujesz?</p></div>
+            <div className='questions'><p className="pulse">how u feelin?</p></div>
             <div style={firstPageDivButtonStyle2}>
-                <button className="btn draw-border draw1" onClick={this.handleButtonGoodProps}>Wyśmienicie</button>
-                <button className="btn draw-border draw1" onClick={this.handleButtonGoodProps}>po prostu ok</button>
-                <button className="btn draw-border draw1" onClick={this.handleButtonNeutralProps}>neutralnie</button>
-                <button className="btn draw-border draw1" onClick={this.handleButtonNeutralProps}>nie wiem</button>
-                <button className="btn draw-border draw1" onClick={this.handleButtonBadProps}>źle</button>
-                <button className="btn draw-border draw1" onClick={this.handleButtonBadProps}>skrajnie do dupy</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonGoodProps}>perfuqt!</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonGoodProps}>OK</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonNeutralProps}>mediocre</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonNeutralProps}>dunno</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonBadProps}>bad</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonBadProps}>ugly af</button>
             </div>
         </div>
     }

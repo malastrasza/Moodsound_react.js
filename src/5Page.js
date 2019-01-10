@@ -23,19 +23,15 @@ class FifthPage extends React.Component {
     render() {
         return <div className='secondPageBackground6' style={finalDiv}>
             <div className='secondPageQuestion'><p className="questions pulse5">
-                wyobraź sobie taką sytuację: zza okna słyszysz krzyk, wyglądasz na zewnątrz, a tam jakiś patus ucieka z
-                czteropakiem Harnasia grubego studenta, podczas gdy ów leży na ziemi w łzach i pocie, stękając o pomoc.
-                co robisz?
+                imagine a situation: you hear a scream, you look out of a window and you spot some naught boy fleeing with a beer 4-pack. the bear seems to belong to sweated fat male student, lying on a pavement few meters farther and crying for help. What would you do?
+
             </p></div>
             <div className="page5center">
-                <button className="btn draw-border draw6" onClick={this.handleButtonFifth1}>nie wyglądam nawet za
-                    okno.
+                <button className="btn draw-border draw6" onClick={this.handleButtonFifth1}>i don't actually even look out of the window
                 </button>
-                <button className="btn draw-border draw6" onClick={this.handleButtonFifth1}>dzwonię po bagiety łiju
-                    łiju
+                <button className="btn draw-border draw6" onClick={this.handleButtonFifth1}>i'd call the cops wowowowoow
                 </button>
-                <button className="btn draw-border draw6" onClick={this.handleButtonFifth2}>wyskakuję przez okno,
-                    anihiluję patusa, wypijam czteropak i daję w pysk studentowi za to, że jest c*pą
+                <button className="btn draw-border draw6" onClick={this.handleButtonFifth2}>jump out of the window, annihilate badboi bully, drink all the beer and slap a student across his cheek for bein a pussy
                 </button>
             </div>
         </div>
