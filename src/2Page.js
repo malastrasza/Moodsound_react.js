@@ -89,7 +89,7 @@ class SecondPageBad extends React.Component {
 
     render() {
         return <div className='secondPageBackground3' style={secondPageBad}>
-            <div><p className="questions pulse">a nie rozkwasiłbyś paru parszywych ryjów?</p></div>
+            <div><p className="questions pulse">wouldnt u slap some ugly faces?</p></div>
             <div>
                 <button className="btn draw-border draw3" onClick={this.handleButtonSecond1}>slayer ku*waaaaaa</button>
                 <button className="btn draw-border draw3" onClick={this.handleButtonSecond2}>nah</button>
