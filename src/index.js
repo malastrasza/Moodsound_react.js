@@ -10,7 +10,6 @@ import FinalPage from "./FinalPage";
 import "./../scss/main.scss";
 
 const firstPageDivButtonStyle1 = {
-    // backgroundColor: "#DAAE90",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

@@ -1,11 +1,14 @@
 {
+  "homepage": "https://github.com/malastrasza/moodsound#readme",
   "name": "webpack-react",
   "version": "1.0.0",
   "description": "### How to install: 1. `git clone https://github.com/beniaminrychter/webpack-react-demo` 2. `cd webpack-react-demo` 3. `npm i`",
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development --env.dev",
-    "build": "webpack --env.prod"
+    "build": "webpack --env.prod",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -47,6 +50,7 @@
   },
   "dependencies": {
     "firebase": "^5.5.5",
+    "gh-pages": "^2.0.1",
     "react-youtube": "^7.8.0"
   },
   "repository": {
@@ -55,6 +59,5 @@
   },
   "bugs": {
     "url": "https://github.com/malastrasza/moodsound/issues"
-  },
-  "homepage": "https://github.com/malastrasza/moodsound#readme"
+  }
 }
