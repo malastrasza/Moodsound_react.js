@@ -5,28 +5,36 @@ I made this pure React.js project basically to:
 - have some visual fun and a bit surprise with a song choice,
 - listen to music.
 
+
 ## Important note!
-At the moment this project is not suitable for mobile.
+At the moment this project is **not** suitable for mobiles.
+
 
 ## How to start?
-You can just simply go to the website: https://malastrasza.github.io/Moodsound_react.js/
+You can just simply go to [the project's website](https://malastrasza.github.io/Moodsound_react.js/) 
 
 or
 
-you can clone this repo, install npm and for the project to start, type in your console: 
-`npm start`
+you can clone this repo, [install npm](https://www.npmjs.com/get-npm) and for the project to start, type in your console:
+```
+npm start
+```
 
-Few words about a project:
-Hereby I'd like to write a bit about this small project itself. It's my final project for CodersLab bootcamp. With my whole group from the bootcamp we decided that I'll be the last one presenting, since a theme of this code is quite funny and chilled and also pretty for an eye, hence it will be both good to be some kind of conclusion of whole group work and relaxing for an atmosphere of project presentations and course (bootcamp) final.
+## How to use?
+It's a one-page site, so after each answer you are shown next question with more answers. After few questions you are given a song that instantly plays on the site. Each song has mostly 3 combinations of answers for it to play. Hence you can have different outputs with each attempt. To start again, simply refresh the page.
 
-What it actually is?
-Answer few questions in polish language (this one will probably stay in my native language, since I got more ideas for a future) and get a song that will fit your mood. Quite simple. Every choice will have an impact on a song chosen separately, no randomizing. What kind of second question will be shown depends on an answer to the first question.
 
-What more will I add:
-- previous button,
-- 5 steps before song, but with randomized questions,
-- color of final page background depending on album artwork color (since ColorAPI wasn't working the way I wanted, I will go for js solution),
-- more songs,
-- slight changes to background and buttons,
-- better structure of a code, since it went a bit spaghetti,
-- anything else I'll come up with :D
+## Technologies used
+- React.js
+- react-youtube
+- Firebase
+
+
+## Project status
+#### What more shall I add?
+- A 'previous page' button.
+- More randomnes among questions.
+- Color of the final page background depending on album artwork color (since ColorAPI wasn't working the way I wanted, I will go for a js solution).
+- More songs.
+- Slight visual changes to background and buttons.
+- Better structure of a code, since it went a bit spaghetti.
