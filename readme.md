@@ -1,9 +1,9 @@
 # moodsound
 I made this pure React.js project basically to:
-- make some use of it,
-- adjust it to fit my exquisite needs,
-- have some visual fun and a bit surprise with a song choice,
-- listen to music.
+- Make some use of it.
+- Adjust it to fit my exquisite needs.
+- Have some visual fun and a bit surprise with a song choice.
+- Listen to music.
 
 
 ## Important note!
