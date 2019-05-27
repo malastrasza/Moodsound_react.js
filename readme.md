@@ -1,4 +1,13 @@
-How to start?
+# moodsound
+I made this pure React.js project basically to:
+- make some use of it,
+- adjust it to fit my exquisite needs,
+- have some visual fun and a bit surprise with a song choice,
+- listen to music.
+
+## How to start?
+You can just simply go to the website
+
 For project to start, type in your console "npm start" or "npm run start".
 
 Few words about a project:
