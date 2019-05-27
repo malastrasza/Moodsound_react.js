@@ -10,7 +10,7 @@ I made this pure React.js project basically to:
 At the moment this project is **not** suitable for mobiles.
 
 
-## How to start?
+## How to start
 You can just simply go to [the project's website](https://malastrasza.github.io/Moodsound_react.js/) 
 
 or
@@ -20,7 +20,7 @@ you can clone this repo, [install npm](https://www.npmjs.com/get-npm) and for th
 npm start
 ```
 
-## How to use?
+## How to use
 It's a one-page site, so after each answer you are shown next question with more answers. After few questions you are given a song that instantly plays on the site. Each song has mostly 3 combinations of answers for it to play, hence you can have different outputs with each attempt. To start again, simply refresh the page.
 
 
