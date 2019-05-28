@@ -195,13 +195,13 @@ class FinalPage extends React.Component {
             return <div className="divFinalPage mainDivFinal" style={finalDiv}>
                 <canvas id="canvasFinal"></canvas>
                 <div className='large5Page'>
-                    <div className="divFinalPage"><p className="randomSong appear">wylosowany utwór:</p></div>
+                    <div className="divFinalPage"><p className="randomSong appear">your song:</p></div>
                     <div className="divFinalPage appear"><img src={this.state.artwork} alt="album_artwork" height="200"
                                                               width="200"/></div>
 
 
-                    <div className="divFinalPage"><p className="sizesFinal appear">tytuł: {this.state.title}</p></div>
-                    <div className="divFinalPage"><p className="sizesFinal appear">wykonawca: {this.state.artist}</p>
+                    <div className="divFinalPage"><p className="sizesFinal appear">title: {this.state.title}</p></div>
+                    <div className="divFinalPage"><p className="sizesFinal appear">artist: {this.state.artist}</p>
                     </div>
                 </div>
                 <div className="ytDiv appear">
