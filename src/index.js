@@ -43,12 +43,12 @@ class Main extends React.Component {
         return <div style={firstPageDivButtonStyle1}>
             <div className='questions'><p className="pulse">how u feelin?</p></div>
             <div style={firstPageDivButtonStyle2}>
-                <button className="btn draw-border draw1" onClick={this.handleButtonGoodProps}>perfuqt!</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonGoodProps}>perfectly!</button>
                 <button className="btn draw-border draw1" onClick={this.handleButtonGoodProps}>OK</button>
                 <button className="btn draw-border draw1" onClick={this.handleButtonNeutralProps}>mediocre</button>
                 <button className="btn draw-border draw1" onClick={this.handleButtonNeutralProps}>dunno</button>
                 <button className="btn draw-border draw1" onClick={this.handleButtonBadProps}>bad</button>
-                <button className="btn draw-border draw1" onClick={this.handleButtonBadProps}>ugly af</button>
+                <button className="btn draw-border draw1" onClick={this.handleButtonBadProps}>ugly :(</button>
             </div>
         </div>
     }

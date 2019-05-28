@@ -72,7 +72,7 @@ class SecondPageNeutral extends React.Component {
                 <button className="btn draw-border draw3" onClick={this.handleButtonSecond1}>yeeeeeeeeeessssss</button>
                 <button className="btn draw-border draw3" onClick={this.handleButtonSecond1}>i don't care...
                 </button>
-                <button className="btn draw-border draw3" onClick={this.handleButtonSecond2}>like what the heck is this question?</button>
+                <button className="btn draw-border draw3" onClick={this.handleButtonSecond2}>like even what the heck is this question?</button>
             </div>
         </div>
     }
