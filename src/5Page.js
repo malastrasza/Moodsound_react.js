@@ -23,15 +23,15 @@ class FifthPage extends React.Component {
     render() {
         return <div className='secondPageBackground6' style={finalDiv}>
             <div className='secondPageQuestion'><p className="questions pulse5">
-                imagine a situation: you hear a scream, you look out of a window and you spot some naught boy fleeing with a beer 4-pack. the bear seems to belong to sweated fat male student, lying on a pavement few meters farther and crying for help. What would you do?
+                imagine a situation: you hear a scream, then look out of a window and you spot some naught boy fleeing with a beer 4-pack. the beer seems to belong to a student, lying on a pavement few meters farther and crying for help. what would you do?
 
             </p></div>
             <div className="page5center">
                 <button className="btn draw-border draw6" onClick={this.handleButtonFifth1}>i don't actually even look out of the window
                 </button>
-                <button className="btn draw-border draw6" onClick={this.handleButtonFifth1}>i'd call the cops wowowowoow
+                <button className="btn draw-border draw6" onClick={this.handleButtonFifth1}>i'd call the cops whee-yoo whee-yoo
                 </button>
-                <button className="btn draw-border draw6" onClick={this.handleButtonFifth2}>jump out of the window, annihilate badboi bully, drink all the beer and slap a student across his cheek for bein a pussy
+                <button className="btn draw-border draw6" onClick={this.handleButtonFifth2}>jump out of the window, annihilate badboi bully, retrieve the beer, buy 4 more and share them with the student
                 </button>
             </div>
         </div>

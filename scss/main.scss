@@ -1,19 +1,11 @@
+$white: #fff;
+$black: #000;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-//body {
-//  font-family: sans-serif;
-//  margin: 0;
-//  padding: 0;
-//}
-
-//img {
-//  width: 200px;
-//  height: auto;
-//}
 
 #app {
   display: flex;
@@ -21,7 +13,6 @@
 }
 
 .questions {
-  //font-family: 'Major Mono Display', monospace;
   font: 700 2.5rem 'Major Mono Display', monospace;
   margin-bottom: 40px;
 }
@@ -43,7 +34,7 @@
 
 // BUTTONS
 
-@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+@mixin btn-border-drawing($color: #ccc, $hover: $black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
   box-shadow: inset 0 0 0 $width $color;
   color: $color;
   transition: color $duration $duration/3;
@@ -98,30 +89,27 @@
   }
 }
 
-//.draw-border {
-//  @include btn-border-drawing(#58afd1, #ffe593, 4px, bottom, right);
-//}
 
 .draw1 {
-  @include btn-border-drawing(#fff, #993633, 4px, bottom, right);
+  @include btn-border-drawing($white, #993633, 4px, bottom, right);
   padding: 10px;
   margin: 10px;
 }
 
 .draw2 {
-  @include btn-border-drawing(#fff, #2B2D82, 4px, bottom, right);
+  @include btn-border-drawing($white, #2B2D82, 4px, bottom, right);
   padding: 10px;
   margin: 10px;
 }
 
 .draw3 {
-  @include btn-border-drawing(#fff, #000, 4px, bottom, right);
+  @include btn-border-drawing($white, $black, 4px, bottom, right);
   padding: 10px;
   margin: 10px;
 }
 
 .draw4 {
-  @include btn-border-drawing(#fff, #F5A9A9, 4px, bottom, right);
+  @include btn-border-drawing($white, #F5A9A9, 4px, bottom, right);
   padding: 10px;
   margin: 10px;
   display: flex;
@@ -129,13 +117,13 @@
 }
 
 .draw5 {
-  @include btn-border-drawing(#fff, #BF4040, 4px, bottom, right);
+  @include btn-border-drawing($white, #BF4040, 4px, bottom, right);
   padding: 10px;
   margin: 10px;
 }
 
 .draw6 {
-  @include btn-border-drawing(#fff, #C2D5FF, 4px, bottom, right);
+  @include btn-border-drawing($white, #C2D5FF, 4px, bottom, right);
   padding: 10px;
   margin: 10px;
 }
@@ -155,22 +143,13 @@
   }
 }
 
-////=== Pen styling, ignore
-//body {
-//  background: #1f1a25;
-//  display: flex;
-//  align-items: center;
-//  justify-content: center;
-//  min-height: 100vh;
-//}
 
 // BACKGROUND
 
 body {
   width: 100vw;
   height: 90vh;
-  color: #fff;
-  //background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  color: $white;
   background: linear-gradient(-45deg, #CB7262, #CDAF6A, #AC6239, #E4CBAF);
   background-size: 400% 400%;
   -webkit-animation: Gradient 25s ease infinite;
@@ -228,43 +207,43 @@ body {
 
 @-webkit-keyframes Gradient {
   0% {
-    background-position: 0% 50%
+    background-position: 0 50%
   }
   50% {
     background-position: 100% 50%
   }
   100% {
-    background-position: 0% 50%
+    background-position: 0 50%
   }
 }
 
 @-moz-keyframes Gradient {
   0% {
-    background-position: 0% 50%
+    background-position: 0 50%
   }
   50% {
     background-position: 100% 50%
   }
   100% {
-    background-position: 0% 50%
+    background-position: 0 50%
   }
 }
 
 @keyframes Gradient {
   0% {
-    background-position: 0% 50%
+    background-position: 0 50%
   }
   50% {
     background-position: 100% 50%
   }
   100% {
-    background-position: 0% 50%
+    background-position: 0 50%
   }
 }
 
 h1,
 h6 {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-align: center;
   position: absolute;
@@ -278,8 +257,9 @@ h6 {
 input[type=range] {
   -webkit-appearance: none;
   width: 50%;
-  margin: 12.6px 0;
-  margin-left: 185px;
+  margin-top: 12.6px;
+  margin-bottom: 12.6px;
+  margin-left: 110px;
 }
 
 input[type=range]:focus {
@@ -290,19 +270,19 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 18.8px;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  box-shadow: 1px 1px 1px $black, 0 0 1px #0d0d0d;
   background: rgba(182, 180, 182, 0.68);
-  border-radius: 0px;
+  border-radius: 0;
   border: 0.1px solid #010101;
 }
 
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1.4px solid #000000;
+  box-shadow: 1px 1px 1px $black, 0 0 1px #0d0d0d;
+  border: 1.4px solid $black;
   height: 44px;
   width: 38px;
   border-radius: 9px;
-  background: #ffffff;
+  background: $white;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -12.7px;
@@ -316,19 +296,19 @@ input[type=range]::-moz-range-track {
   width: 100%;
   height: 18.8px;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  box-shadow: 1px 1px 1px $black, 0 0 1px #0d0d0d;
   background: rgba(182, 180, 182, 0.68);
-  border-radius: 0px;
+  border-radius: 0;
   border: 0.1px solid #010101;
 }
 
 input[type=range]::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1.4px solid #000000;
+  box-shadow: 1px 1px 1px $black, 0 0 1px #0d0d0d;
+  border: 1.4px solid $black;
   height: 44px;
   width: 38px;
   border-radius: 9px;
-  background: #ffffff;
+  background: $white;
   cursor: pointer;
 }
 
@@ -344,24 +324,23 @@ input[type=range]::-ms-track {
 input[type=range]::-ms-fill-lower {
   background: rgba(169, 167, 169, 0.68);
   border: 0.1px solid #010101;
-  border-radius: 0px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border-radius: 0;
+  box-shadow: 1px 1px 1px $black, 0 0 1px #0d0d0d;
 }
 
 input[type=range]::-ms-fill-upper {
   background: rgba(182, 180, 182, 0.68);
   border: 0.1px solid #010101;
-  border-radius: 0px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border-radius: 0;
+  box-shadow: 1px 1px 1px $black, 0 0 1px #0d0d0d;
 }
 
 input[type=range]::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1.4px solid #000000;
-  height: 44px;
+  box-shadow: 1px 1px 1px $black, 0 0 1px #0d0d0d;
+  border: 1.4px solid $black;
   width: 38px;
   border-radius: 9px;
-  background: #ffffff;
+  background: $white;
   cursor: pointer;
   height: 18.8px;
 }
@@ -387,7 +366,6 @@ input[type=range]:focus::-ms-fill-upper {
 
 .large5Page {
   position: relative;
-  //height: 30vh;
 }
 
 .randomSong {
@@ -405,7 +383,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .mainDivFinal {
-  background: black;
+  background: $black;
 }
 
 body, html {
@@ -420,7 +398,7 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #000000;
+  background: $black;
   z-index: 0;
 }
 
@@ -457,7 +435,7 @@ canvas {
 
 }
 
-@keyframes suwak {
+@keyframes scroller {
   0% {
     transform: scale(1);
   }
@@ -467,9 +445,9 @@ canvas {
 }
 
 .pulse {
-  animation: suwak 0.8s infinite alternate;
+  animation: scroller 0.8s infinite alternate;
 }
 
 .pulse5 {
-  animation: suwak 3s infinite alternate;
+  animation: scroller 3s infinite alternate;
 }
