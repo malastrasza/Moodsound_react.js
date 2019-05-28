@@ -40,20 +40,20 @@ class ThirdPage extends React.Component {
     render() {
         let label;
         if (this.state.inputRange == 1) {
-            label = "i don't want to"
+            label = "bubbles from trailer park boiz"
         } else if (this.state.inputRange == 2) {
-            label = "i'd probably live for some more time"
+            label = "homer from the simpsons"
         } else if (this.state.inputRange == 3) {
-            label = "i don't care"
+            label = "morty (not rick)"
         } else if (this.state.inputRange == 4) {
-            label = "lemme become senior fullstack, then i can die"
+            label = "cartman from south park"
         } else if (this.state.inputRange == 5) {
-            label = "ye, af"
+            label = "js dev"
         }
         return (
             <div className='secondPageBackground4' style={thirdPageDiv}>
                 <div>
-                    <div><p className="questions pulse">do u wanna die?</p></div>
+                    <div><p className="questions pulse">who are you today?</p></div>
                     <div><input type="range" min="1" max="5" name="range" value={this.state.inputRange}
                                 onChange={this.handleValueChange}/></div>
 

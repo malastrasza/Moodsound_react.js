@@ -43,12 +43,12 @@ class SecondPageGood extends React.Component {
 
     render() {
         return <div className='secondPageBackground' style={secondPageGood}>
-            <div className='secondPageQuestion'><p className='questions pulse'>would u like to beat a poo out of someone?</p></div>
+            <div className='secondPageQuestion'><p className='questions pulse'>how much of an angry boi r u today?</p></div>
             <div>
-                <button className="btn draw-border draw2" onClick={this.handleButtonSecond1}>sure!</button>
-                <button className="btn draw-border draw2" onClick={this.handleButtonSecond2}>for god's sake, no!
+                <button className="btn draw-border draw2" onClick={this.handleButtonSecond1}>lotta, see my teeth!</button>
+                <button className="btn draw-border draw2" onClick={this.handleButtonSecond2}>i just needa hug
                 </button>
-                <button className="btn draw-border draw2" onClick={this.handleButtonSecond2}>yyyy... nope.</button>
+                <button className="btn draw-border draw2" onClick={this.handleButtonSecond2}>i am the peace embedded in flesh</button>
 
             </div>
         </div>
@@ -67,12 +67,12 @@ class SecondPageNeutral extends React.Component {
 
     render() {
         return <div className='secondPageBackground2' style={secondPageNeutral}>
-            <div><p className="questions pulse">is ur face short of some close fist interaction?</p></div>
+            <div><p className="questions pulse">how about some world peace?</p></div>
             <div>
-                <button className="btn draw-border draw3" onClick={this.handleButtonSecond1}>yeah, go on!</button>
+                <button className="btn draw-border draw3" onClick={this.handleButtonSecond1}>yeeeeeeeeeessssss</button>
                 <button className="btn draw-border draw3" onClick={this.handleButtonSecond1}>i don't care...
                 </button>
-                <button className="btn draw-border draw3" onClick={this.handleButtonSecond2}>lol, nope</button>
+                <button className="btn draw-border draw3" onClick={this.handleButtonSecond2}>like what the heck is this question?</button>
             </div>
         </div>
     }
@@ -89,9 +89,9 @@ class SecondPageBad extends React.Component {
 
     render() {
         return <div className='secondPageBackground3' style={secondPageBad}>
-            <div><p className="questions pulse">wouldnt u slap some ugly faces?</p></div>
+            <div><p className="questions pulse">how about some moshpit?</p></div>
             <div>
-                <button className="btn draw-border draw3" onClick={this.handleButtonSecond1}>slayer ku*waaaaaa</button>
+                <button className="btn draw-border draw3" onClick={this.handleButtonSecond1}>hellll yeeeee</button>
                 <button className="btn draw-border draw3" onClick={this.handleButtonSecond2}>nah</button>
             </div>
         </div>
